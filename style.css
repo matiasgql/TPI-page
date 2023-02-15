@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+body {
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+.background-p {
+  margin: 32px;
+}
+
+.card {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.cuerpo {
+  margin: 0;
+  font-family: 'Open Sans Regular', sans-serif;
+  background-color: #FDFFFC;
+}
+
+#title-div {
+  background-color: white;
+  border-radius: 32px;
+  width: fit-content ;
+}
+
+h1 {
+  font-family: 'Open Sans Regular', sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hdos {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans Regular', sans-serif;
+  margin: 4%;
+  font-size: 30px;
+}
+
+.header {
+  background-image: url("Imagenes/GuevaraBanner.jpg");
+  background-size: cover;
+  background-position: 0% 40%;
+}
+
+/* MENU */
+
+.n {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  width: 96%;
+  color: #1E1E1E;
+
+}
+.navChildren {
+  height: 30px;
+  font-size: 25px;
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #020100;
+}
+
+.navChildrenBG {
+  margin-top: 64px;
+  width:125%;
+  background-color: #F9C80E;
+  border-radius: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 6px;
+  transition:  background-color 250ms ease-in-out;
+}
+
+.navChildrenBG:hover {
+  background-color: #E0B106;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* PIE DE PAGINA */
+.pie {
+  margin-top: 30%;
+  height: 10rem;
+  position: relative;
+  border: black 3px solid;
+}
+.subPie {
+  display: flex;
+  justify-content: center;
+}
+
+.caja {
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+  background-color: #ffffff;
+  height: 20rem;
+  width: 100%;
+}
+h2:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+/* IMAGEN DIFUMINADA DE PORTADA */
+
+div.background {
+  width: calc(90vw - 20px);
+  display: flexbox;
+  align-items: center;
+  margin: 32px;
+  border-color: #F9C80E;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+div.background p {
+  font-size: 32px;
+}
+
+p, ul, li {
+  font-weight: bold;
+  color: #1E1E1E;
+  font-size: 16px;
+}
+
+.background-p {
+  margin-left: 64px;
+  justify-content: center;
+  display: flex;
+}
+
+.nombre-aula {
+  color: #1E1E1E;
+  font-size: 32px;
+}
+
+/*Tabla*/
+table {
+  color: #1E1E1E;
+  background-color: #F9C80E;
+  border-radius: 16px;
+  font-weight: bold;
+  width: 90%;
+}
+
+/* redes */
+img{
+  width: 64px;
+}
+.hdos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hijo{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pp{
+  margin: 0px;
+  margin-top: 100px;
+  background-color: #F9C80E;
+}
+.ppp{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+  align-items: center;
+}
+
+/*Formulario*/
+
+.contact_form {
+  width: 480px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+
+  border-color: #F9C80E;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+input {
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F9C80E;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+textarea {
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F9C80E;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  font-family: 'Open Sans Regular', sans-serif;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Open Sans Bold", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: #F9C80E;
+  border-color: #F9C80E;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+.obligatorio {
+  color: #F9C80E;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+@media (max-width: 900px) { 
+  h1 {
+    font-size: 24px;
+  }
+  div.background p {
+    font-size: 24px;
+  }
+  .navChildren {
+    height: 24px;
+    font-size: 16px;
+    font-family: 'Open Sans Bold', sans-serif;
+    color: #020100;
+  }
+  .navChildrenBG {
+    padding-bottom: 0px;
+  }
+
+  .ppp {
+    flex-direction: column;
+  }
+  table {
+    width: 90vw;
+    
+  }
+  td{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 521px) {
+  .contact_form {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,143 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    /* Barra de desplazamiento */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1E1E1E;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #F9C80E;
+      border-radius: 32px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E0B106;
+    }
+  </style>
+  <body class="cuerpo">
+    <header class="header">
+      <div>
+        <center>
+          <div id="title-div">
+            <h1>Colegio Provincial Dr. Ernesto Guevara</h1>
+          </div>
+        </center>
+      </div>
+      <div class="n">
+        <div class="box">
+              <a href="index.html">
+                <div class="navChildrenBG">
+                  <center>
+                    <div class="navChildren">Inicio</div>
+                  </center>
+              </div>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="sobreNosotros.html">
+              <div class="navChildrenBG">
+                <center>
+                  <div class="navChildren">Sobre Nosotros</div>
+                </center>
+              </div>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="contacto.html">
+              <div class="navChildrenBG">
+                <center>
+                  <div class="navChildren">Contacto</div>
+                </center>
+              </div>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="horarios_login.html">
+              <div class="navChildrenBG">
+                <center>
+                  <div class="navChildren">Horarios</div>
+                </center>
+              </div>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="normas.html">
+              <div class="navChildrenBG">
+                <center>
+                  <div class="navChildren">Normas</div>
+                </center>
+              </div>
+            </a>
+        </div>
+      </div>
+    </header>
+    <!-- formulario de contacto en html y css -->
+
+    <div class="contact_form">
+      <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+        <form action="mailto:practicasprof2@gmail.com" method="post" enctype="text/plain">
+          <p class="p_form">
+            <label for="nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"/>
+          </p>
+
+          <p class="p_form">
+            <label for="email" class="colocar_email">Email<span class="obligatorio">*</span></label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Correo electrónico"/>
+          </p>
+
+          <p class="p_form">
+            <label for="telefone" class="colocar_telefono">Teléfono </label>
+            <!--Este input esta modificado para que funcione correctamente en todos los navegadores-->
+            <input id="telefono" type="tel" value=''
+              oninput='{var telVal = document.getElementById("telefono").value; telVal = telVal.replace(/[^0-9]/g, "");}'
+              name="introducir_telefono" placeholder="Escribe tu teléfono"/>
+          </p>
+
+          <p class="p_form">
+            <label for="asunto" class="colocar_asunto">Asunto<span class="obligatorio">*</span></label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto"/>
+          </p>
+
+          <p class="p_form">
+            <label for="mensaje" class="colocar_mensaje">Mensaje<span class="obligatorio">*</span></label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Escribe un mensaje"></textarea>
+          </p>
+          <button type="submit" name="enviar_formulario" id="enviar">ENVIAR
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+  <!-- Site footer -->
+  <footer class="pp">
+    <div class="ppp">
+      <p>Copyright ©: Colegio Guevara Todos los derechos reservados 2022</p>
+      <p><a href="https://www.facebook.com/colegioguevara">Facebook</a></p>
+      <p><a href="https://www.instagram.com/">Instagram</a></p>
+      <p>Telefono: +54 2964 30-0532</p>
+      <p>Dirección: Río Candelaria 3460</p>
+      <p>Correo: cpdeguevara.sec@tdf.edu.ar</p>
+    </div>
+  </footer>
+</html>
