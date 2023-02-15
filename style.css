@@ -296,4 +296,7 @@ h3 {
   .contact_form {
     width: 90vw;
   }
+  input {
+    width: 80vw;
+  }
 }
